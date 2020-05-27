@@ -1,0 +1,218 @@
+{
+  // Place your snippets for apex here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+
+  "foreach": {
+    "prefix": "foreach",
+    "body": ["for (${1:type} ${2:var} : ${3:array_or_set}) {", "\t$0", "}"],
+    "description": "For-each loop"
+  },
+  "if": {
+    "prefix": "if",
+    "body": ["if (${1:condition}) {", "\t$0", "}"],
+    "description": "if statement"
+  },
+  "ifelse": {
+    "prefix": "ifelse",
+    "body": ["if (${1:condition}) {", "\t$2", "} else {", "\t$0", "}"],
+    "description": "if/else statement"
+  },
+  "else": {
+    "prefix": "else",
+    "body": ["else {", "\t$0", "}"],
+    "description": "else statement"
+  },
+  "ifnull": {
+    "prefix": "ifnull",
+    "body": ["if (${1:condition} == null) {", "\t$0", "}"],
+    "description": "if statement null check"
+  },
+  "ifnotnull": {
+    "prefix": "ifnotnull",
+    "body": ["if (${1:condition} != null) {", "\t$0", "}"],
+    "description": "if statement not null check"
+  },
+  "while": {
+    "prefix": "while",
+    "body": ["while (${1:condition}) {", "\t$0", "}"],
+    "description": "While loop"
+  },
+  "do-while": {
+    "prefix": "dowhile",
+    "body": ["do {", "\t$0", "} while (${1:condition});"],
+    "description": "Do-While loop"
+  },
+  "constructor": {
+    "prefix": "constructor",
+    "body": [
+      "${1:|private,public,global|} ${2:${TM_FILENAME_BASE}}($3) {",
+      "\t${0:super();}",
+      "}"
+    ],
+    "description": "New constructor"
+  },
+  "new object": {
+    "prefix": "newobj",
+    "body": ["${1:Object} ${2:var} = new ${1:Object}();", "$0"],
+    "description": "New Object"
+  },
+  "Field": {
+    "prefix": "field",
+    "body": ["${1:|private,public,global|} ${2:String} ${3:name};"],
+    "description": "New field"
+  },
+  "method": {
+    "prefix": "method",
+    "body": [
+      "${1:|private,public,global|} ${2:void} ${3:name}($4) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "New method"
+  },
+  "staticmethod": {
+    "prefix": "staticmethod",
+    "body": [
+      "${1:|private,public,global|} static ${2:void} ${3:name}($4) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "New static method"
+  },
+
+  "sobjecttype": {
+    "prefix": "sobjecttype",
+    "body": ["SObjectType ${1:var} = ${2:sObjectName}.SObjectType;", "$0"],
+    "description": "SObjectType for SObject"
+  },
+  "DescribeSObjectResult": {
+    "prefix": "describesobjectresult",
+    "body": [
+      "DescribeSObjectResult ${1:var} = ${2:sObjectName}.SObjectType.getDescribe()"
+    ],
+    "description": "DescribeSObjectResult for SObjectType"
+  },
+  "SObjectField": {
+    "prefix": "sobjectfield",
+    "body": ["SObjectField ${1:var} = ${2:sObjectName}.${3:fieldName}", "$0"],
+    "description": "SObjectField for SObject Field"
+  },
+  "DescribeFieldResult": {
+    "prefix": "describefieldresult",
+    "body": [
+      "DescribeFieldResult ${1:var} = ${2:sObjectName}.${3:fieldName}.getDescribe();",
+      "$0"
+    ],
+    "description": "DescribeFieldResult for SObject Field"
+  },
+  "System debug": {
+    "prefix": "sysdebug",
+    "body": ["System.debug($0);"],
+    "description": "Debug Statement"
+  },
+  "Assert Fail": {
+    "prefix": "sysassf",
+    "body": ["System.assert(false, ${1:message});"],
+    "description": "System.assert(false, message);"
+  },
+  "Assert Equal": {
+    "prefix": "sysasseq",
+    "body": ["System.assertEqual(${1:expected}, ${2:actual});"],
+    "description": "System.assertEquals(expected, actual);"
+  },
+  "Assert null": {
+    "prefix": "sysassnull",
+    "body": ["System.assertEqual(null, ${1:actual});"],
+    "description": "System.assertEquals(null, actual);"
+  },
+  "Assert Not Null": {
+    "prefix": "sysassnotnull",
+    "body": ["System.assertNotEqual(null, ${1:actual});"],
+    "description": "System.assertNotEqual(null, actual);"
+  },
+  "Set Id": {
+    "prefix": "mapids",
+    "body": [
+      "Set<Id> ${1:var} = new Set<Id>(new Map<Id, SObject>(${2:sObjList})).keySet();",
+      "$0"
+    ],
+    "description": "Set Ids from map of SObject"
+  },
+  "TestMethod": {
+    "prefix": "testmethod",
+    "body": [
+      "@IsTest",
+      "static void ${1:name}() {",
+      "\t// Arrange",
+      "\t$0",
+      "\t// Act",
+      "\t// Assert",
+      "}"
+    ],
+    "description": "Test method"
+  }
+
+  /* Disabled, These are the same as the snippets in the salesforce apex vscode extension
+  "fori": {
+  	"prefix": "fori",
+  	"body": [
+  		"for (Integer ${1:i} = ${2:0}; ${1:i} < ${3:size}; ${1:i}++) {",
+  		"\t$0",
+  		"}"
+  	],
+  	"description": "Indexed for loop"
+  },
+  "trycatch": {
+    "prefix": "trycatch",
+    "body": [
+      "try {",
+      "\t$1",
+      "} catch (${2:Exception} ${3:e}) {",
+      "\t$4//${0:TODO}: handle exception",
+      "}"
+    ],
+    "description": "try/catch block"
+  },
+  "tryfinally": {
+    "prefix": "tryfinally",
+    "body": [
+      "try {",
+      "\t$1",
+      "} finally {",
+      "\t$0",
+      "}"
+    ],
+    "description": "try/finally block"
+  },
+  "trycatchfinally": {
+    "prefix": "trycatchfinally",
+    "body": [
+      "try {",
+      "\t$1",
+      "} catch (${2:Exception} ${3:e}) {",
+      "\t$4//${0:TODO}: handle exception",
+      "} finally {",
+      "\t$0",
+      "}"
+    ],
+    "description": "try/catch/finally block"
+  },
+  "List": {
+    "prefix": "list",
+    "body": ["List<${1:Object}> ${2:var} = new List<$1>();"],
+    "description": "List Constructor"
+  },
+  "Set": {
+    "prefix": "set",
+    "body": ["Set<${1:Object}> ${2:var} = new Set<$1>();"],
+    "description": "Set Constructor"
+  },
+  "Map": {
+    "prefix": "map",
+    "body": ["Map<${1:Object}, ${2:Object}> ${3:mapName} = new Map<$1, $2>();"],
+    "description": "Set Constructor"
+  },
+  */
+}
