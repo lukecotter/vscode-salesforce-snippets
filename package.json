@@ -1,0 +1,39 @@
+{
+  "name": "salesforce-snippets",
+  "displayName": "Salesforce Snippets",
+  "description": "Code snippets for Salesforce (Apex) Development",
+  "version": "0.1.0",
+  "publisher": "lcotter",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#009edc",
+    "theme": "light"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/lukecotter/vscode-salesforce/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukecotter/vscode-salesforce"
+  },
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "apex",
+    "salesforce",
+    "snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "apex",
+        "path": "./snippets/apex.code-snippets"
+      }
+    ]
+  }
+}
