@@ -33,12 +33,8 @@ To use the snippets type part of a snippet and press `Tab` or `Enter` or, press 
 | Snippet                 | Description                            |
 | ----------------------- | -------------------------------------- |
 | `foreach`               | For-each loop                          |
-| `if`                    | if statement                           |
 | `ifelse`                | if/else statement                      |
-| `else`                  | else statement                         |
 | `ifnull`                | if statement null check                |
-| `while`                 | While loop                             |
-| `dowhile`               | Do-While loop                          |
 | `constructor`           | New constructor                        |
 | `newobj`                | New Object                             |
 | `field`                 | New field                              |
