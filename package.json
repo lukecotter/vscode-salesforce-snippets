@@ -7,7 +7,7 @@
   "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#009edc",
-    "theme": "light"
+    "theme": "dark"
   },
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
