@@ -9,20 +9,10 @@
     "body": ["for (${1:type} ${2:var} : ${3:array_or_set}) {", "\t$0", "}"],
     "description": "For-each loop"
   },
-  "if": {
-    "prefix": "if",
-    "body": ["if (${1:condition}) {", "\t$0", "}"],
-    "description": "if statement"
-  },
   "ifelse": {
     "prefix": "ifelse",
     "body": ["if (${1:condition}) {", "\t$2", "} else {", "\t$0", "}"],
     "description": "if/else statement"
-  },
-  "else": {
-    "prefix": "else",
-    "body": ["else {", "\t$0", "}"],
-    "description": "else statement"
   },
   "ifnull": {
     "prefix": "ifnull",
@@ -33,16 +23,6 @@
     "prefix": "ifnotnull",
     "body": ["if (${1:condition} != null) {", "\t$0", "}"],
     "description": "if statement not null check"
-  },
-  "while": {
-    "prefix": "while",
-    "body": ["while (${1:condition}) {", "\t$0", "}"],
-    "description": "While loop"
-  },
-  "do-while": {
-    "prefix": "dowhile",
-    "body": ["do {", "\t$0", "} while (${1:condition});"],
-    "description": "Do-While loop"
   },
   "constructor": {
     "prefix": "constructor",
@@ -155,6 +135,26 @@
   }
 
   /* Disabled, These are the same as the snippets in the salesforce apex vscode extension
+  "if": {
+    "prefix": "if",
+    "body": ["if (${1:condition}) {", "\t$0", "}"],
+    "description": "if statement"
+  },
+  "else": {
+    "prefix": "else",
+    "body": ["else {", "\t$0", "}"],
+    "description": "else statement"
+  },
+  "while": {
+    "prefix": "while",
+    "body": ["while (${1:condition}) {", "\t$0", "}"],
+    "description": "While loop"
+  },
+  "do-while": {
+    "prefix": "dowhile",
+    "body": ["do {", "\t$0", "} while (${1:condition});"],
+    "description": "Do-While loop"
+  },
   "fori": {
   	"prefix": "fori",
   	"body": [
