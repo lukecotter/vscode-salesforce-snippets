@@ -2,7 +2,7 @@
   "name": "salesforce-snippets",
   "displayName": "Salesforce Snippets",
   "description": "Code snippets for Salesforce (Apex) Development",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "lcotter",
   "icon": "images/icon.png",
   "galleryBanner": {
