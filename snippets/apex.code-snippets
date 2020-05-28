@@ -35,7 +35,7 @@
   },
   "new object": {
     "prefix": "newobj",
-    "body": ["${1:Object} ${2:var} = new ${1:Object}();", "$0"],
+    "body": ["${1:Object} ${2:var} = new ${1:Object}();"],
     "description": "New Object"
   },
   "Field": {
@@ -61,10 +61,9 @@
     ],
     "description": "New static method"
   },
-
   "sobjecttype": {
     "prefix": "sobjecttype",
-    "body": ["SObjectType ${1:var} = ${2:sObjectName}.SObjectType;", "$0"],
+    "body": ["SObjectType ${1:var} = ${2:sObjectName}.SObjectType;"],
     "description": "SObjectType for SObject"
   },
   "DescribeSObjectResult": {
@@ -76,14 +75,13 @@
   },
   "SObjectField": {
     "prefix": "sobjectfield",
-    "body": ["SObjectField ${1:var} = ${2:sObjectName}.${3:fieldName}", "$0"],
+    "body": ["SObjectField ${1:var} = ${2:sObjectName}.${3:fieldName}"],
     "description": "SObjectField for SObject Field"
   },
   "DescribeFieldResult": {
     "prefix": "describefieldresult",
     "body": [
-      "DescribeFieldResult ${1:var} = ${2:sObjectName}.${3:fieldName}.getDescribe();",
-      "$0"
+      "DescribeFieldResult ${1:var} = ${2:sObjectName}.${3:fieldName}.getDescribe();"
     ],
     "description": "DescribeFieldResult for SObject Field"
   },
@@ -92,22 +90,22 @@
     "body": ["System.debug($0);"],
     "description": "Debug Statement"
   },
-  "Assert Fail": {
+  "System Assert False": {
     "prefix": "sysassf",
     "body": ["System.assert(false, ${1:message});"],
     "description": "System.assert(false, message);"
   },
-  "Assert Equal": {
+  "System Assert Equal": {
     "prefix": "sysasseq",
     "body": ["System.assertEqual(${1:expected}, ${2:actual});"],
     "description": "System.assertEquals(expected, actual);"
   },
-  "Assert null": {
+  "System Assert null": {
     "prefix": "sysassnull",
     "body": ["System.assertEqual(null, ${1:actual});"],
     "description": "System.assertEquals(null, actual);"
   },
-  "Assert Not Null": {
+  "System Assert Not Null": {
     "prefix": "sysassnotnull",
     "body": ["System.assertNotEqual(null, ${1:actual});"],
     "description": "System.assertNotEqual(null, actual);"
@@ -115,8 +113,7 @@
   "Set Id": {
     "prefix": "mapids",
     "body": [
-      "Set<Id> ${1:var} = new Set<Id>(new Map<Id, SObject>(${2:sObjList})).keySet();",
-      "$0"
+      "Set<Id> ${1:var} = new Set<Id>(new Map<Id, SObject>(${2:sObjList})).keySet();"
     ],
     "description": "Set Ids from map of SObject"
   },
@@ -156,13 +153,13 @@
     "description": "Do-While loop"
   },
   "fori": {
-  	"prefix": "fori",
-  	"body": [
-  		"for (Integer ${1:i} = ${2:0}; ${1:i} < ${3:size}; ${1:i}++) {",
-  		"\t$0",
-  		"}"
-  	],
-  	"description": "Indexed for loop"
+    "prefix": "fori",
+    "body": [
+      "for (Integer ${1:i} = ${2:0}; ${1:i} < ${3:size}; ${1:i}++) {",
+      "\t$0",
+      "}"
+      ],
+    "description": "Indexed for loop"
   },
   "trycatch": {
     "prefix": "trycatch",
