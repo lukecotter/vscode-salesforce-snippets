@@ -4,7 +4,7 @@ All notable changes to the "salesforce-snippets" extension will be documented in
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## Unreleased
+## [0.2.0] - 2020-05-29
 
 ### Removed
 
