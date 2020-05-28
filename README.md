@@ -6,7 +6,7 @@
 
 <p align="center">
   <br />
-  <img src="https://raw.githubusercontent.com/lukecotter/vscode-salesforce/master/images/icon.png" alt="Salesforce Snippets Logo" style="width:25%;height:25%;"/>
+  <img src="https://raw.githubusercontent.com/lukecotter/vscode-salesforce/master/images/icon.png" alt="Salesforce Snippets Logo" width=25%"/>
 </p>
 
 Code snippets for Salesforce (Apex) for [Vs Code](https://code.visualstudio.com/) editor. Additional useful code snippets not included in the [Salesforce Extension Pack](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode) and improved syntax of some that are.
