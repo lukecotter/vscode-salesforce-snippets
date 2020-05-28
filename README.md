@@ -1,15 +1,20 @@
 # Salesforce Snippets for Salesforce (Apex) Development
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/lcotter.salesforce-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=lcotter.salesforce-snippets)
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/lcotter.salesforce-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=lcotter.salesforce-snippets)
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/lcotter.salesforce-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=lcotter.salesforce-snippets)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/lcotter.salesforce-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=lcotter.salesforce-snippets)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/lcotter.salesforce-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=lcotter.salesforce-snippets)
 
-Contains code snippets for Salesforce (Apex) for [Vs Code](https://code.visualstudio.com/) editor.
+<p align="center">
+  <br />
+  <img src="https://raw.githubusercontent.com/lukecotter/vscode-salesforce/master/images/icon.png" alt="Salesforce Snippets Logo" style="width:25%;height:25%;"/>
+</p>
+
+Code snippets for Salesforce (Apex) for [Vs Code](https://code.visualstudio.com/) editor. Additional useful code snippets not included in the [Salesforce Extension Pack](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode) and improved syntax of some that are.
 
 ## Installation
 
-1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
-1. Run `ext install Salesforce Snippets`
+1. Launch VS Code Quick Open `Ctrl`-`P` (Windows, Linux) or `Cmd`-`P` (OSX)
+1. paste `ext install lcotter.salesforce-snippets` and press enter.
 
 or
 
@@ -21,9 +26,7 @@ or
 
 ## Snippets
 
-To use the snippets type part of a snippet and press `Tab` or `Enter`
-
-or, press `ctrl`+`Space` to activate instellisense.
+To use the snippets type part of a snippet and press `Tab` or `Enter` or, press `ctrl`+`Space` to activate instellisense.
 
 ### Apex Snippets
 
