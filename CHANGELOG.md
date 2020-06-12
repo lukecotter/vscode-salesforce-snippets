@@ -8,9 +8,15 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
-- New `formap` snippet to iterate over a map.
-- New `ter` snippet for a ternary statment.
-- New `setidsfromrecordlist` snippet to return a set of ids from an SObject record list.
+- `sysassnoteq` snippet for `System.assertNotEqual(expected, actual);`.
+
+## [0.3.0] - 2020-06-12
+
+### Added
+
+- `formap` snippet to iterate over a map.
+- `ter` snippet for a ternary statment.
+- `setidsfromrecordlist` snippet to return a set of ids from an SObject record list.
 
 ### Changed
 
