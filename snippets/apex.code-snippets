@@ -9,6 +9,16 @@
     "body": ["for (${1:type} ${2:var} : ${3:array_or_set}) {", "\t$0", "}"],
     "description": "For-each loop"
   },
+  "formap": {
+    "prefix": "formap",
+    "body": [
+      "for(${1:Object} ${2:key} : ${3:map}.keySet()){ {",
+      "\t${1:Object} ${4:item} = ${3}.get(${1});",
+      "\t$0",
+      "}"
+    ],
+    "description": "For loop for entries in a map"
+  },
   "ifelse": {
     "prefix": "ifelse",
     "body": ["if (${1:condition}) {", "\t$2", "} else {", "\t$0", "}"],
@@ -23,6 +33,11 @@
     "prefix": "ifnotnull",
     "body": ["if (${1:condition} != null) {", "\t$0", "}"],
     "description": "if not null statement"
+  },
+  "ternary": {
+    "prefix": "ter",
+    "body": ["${1:condition} ? ${2:exprIfTrue} : ${3:exprIfFalse};"],
+    "description": "x ? y : z;"
   },
   "constructor": {
     "prefix": "constructor",
@@ -60,6 +75,20 @@
       "}"
     ],
     "description": "New static method"
+  },
+  "Set Ids from list of records": {
+    "prefix": "setidsfromrecordlist",
+    "body": [
+      "Set<Id> ${1:variable} = new Map<Id, SObject>(${2:recordList}).keySet();"
+    ],
+    "description": "Set of Ids from List of records"
+  },
+  "Map from list of records": {
+    "prefix": "mapfromrecordlist",
+    "body": [
+      "Map<Id, ${1:SObject}> ${2:variable} = new Map<Id, ${1}>(${3:recordList});"
+    ],
+    "description": "Map from List of records"
   },
   "SObjectType": {
     "prefix": "sobjecttype",
@@ -109,13 +138,6 @@
     "prefix": "sysassnotnull",
     "body": ["System.assertNotEqual(null, ${1:actual});"],
     "description": "System.assertNotEqual(null, actual);"
-  },
-  "Set Id": {
-    "prefix": "mapids",
-    "body": [
-      "Set<Id> ${1:var} = new Set<Id>(new Map<Id, SObject>(${2:sObjList})).keySet();"
-    ],
-    "description": "Set Ids from map of SObject"
   },
   "TestMethod": {
     "prefix": "testmethod",

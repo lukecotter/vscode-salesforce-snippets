@@ -33,14 +33,18 @@ To use the snippets type part of a snippet and press `Tab` or `Enter` or, press 
 | Snippet                 | Description                            |
 | ----------------------- | -------------------------------------- |
 | `foreach`               | For-each loop                          |
+| `formap`                | For loop for entries in a map          |
 | `ifelse`                | if/else statement                      |
 | `ifnull`                | if statement null check                |
 | `ifnotnull`             | if statement not null check            |
+| `ter`                   | x ? y : z                              |
 | `constructor`           | New constructor                        |
 | `newobj`                | New Object                             |
 | `field`                 | New field                              |
 | `method`                | New method                             |
 | `staticmethod`          | New static method                      |
+| `setidsfromrecordlist`  | Set of Ids from List of records        |
+| `mapfromrecordlist`     | Map from List of records               |
 | `sobjecttype`           | SObjectType for SObject                |
 | `describesobjectresult` | DescribeSObjectResult for SObjectType  |
 | `sobjectfield`          | SObjectField for SObject Field         |
@@ -50,5 +54,4 @@ To use the snippets type part of a snippet and press `Tab` or `Enter` or, press 
 | `sysasseq`              | System.assertEquals(expected, actual); |
 | `sysassnull`            | System.assertEquals(null, actual);     |
 | `sysassnotnull`         | System.assertNotEqual(null, actual);   |
-| `mapids`                | Set Ids from map of SObject            |
 | `testmethod`            | Test method                            |
