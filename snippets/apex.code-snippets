@@ -127,12 +127,17 @@
   "System Assert Equal": {
     "prefix": "sysasseq",
     "body": ["System.assertEqual(${1:expected}, ${2:actual});"],
-    "description": "System.assertEquals(expected, actual);"
+    "description": "System.assertEqual(expected, actual);"
+  },
+  "System Assert Not Equal": {
+    "prefix": "sysassnoteq",
+    "body": ["System.assertNotEqual(${1:expected}, ${2:actual});"],
+    "description": "System.assertNotEqual(expected, actual);"
   },
   "System Assert null": {
     "prefix": "sysassnull",
     "body": ["System.assertEqual(null, ${1:actual});"],
-    "description": "System.assertEquals(null, actual);"
+    "description": "System.assertEqual(null, actual);"
   },
   "System Assert Not Null": {
     "prefix": "sysassnotnull",
