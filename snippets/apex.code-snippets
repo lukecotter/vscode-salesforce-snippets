@@ -17,12 +17,12 @@
   "ifnull": {
     "prefix": "ifnull",
     "body": ["if (${1:condition} == null) {", "\t$0", "}"],
-    "description": "if statement null check"
+    "description": "if null statement"
   },
   "ifnotnull": {
     "prefix": "ifnotnull",
     "body": ["if (${1:condition} != null) {", "\t$0", "}"],
-    "description": "if statement not null check"
+    "description": "if not null statement"
   },
   "constructor": {
     "prefix": "constructor",
@@ -52,7 +52,7 @@
     ],
     "description": "New method"
   },
-  "staticmethod": {
+  "static method": {
     "prefix": "staticmethod",
     "body": [
       "${1:|private,public,global|} static ${2:void} ${3:name}($4) {",
@@ -61,7 +61,7 @@
     ],
     "description": "New static method"
   },
-  "sobjecttype": {
+  "SObjectType": {
     "prefix": "sobjecttype",
     "body": ["SObjectType ${1:var} = ${2:sObjectName}.SObjectType;"],
     "description": "SObjectType for SObject"
@@ -209,7 +209,7 @@
   "Map": {
     "prefix": "map",
     "body": ["Map<${1:Object}, ${2:Object}> ${3:mapName} = new Map<$1, $2>();"],
-    "description": "Set Constructor"
+    "description": "Map Constructor"
   },
   */
 }
