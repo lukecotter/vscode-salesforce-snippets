@@ -35,6 +35,7 @@ To use the snippets type part of a snippet and press `Tab` or `Enter` or, press 
 | `foreach`               | For-each loop                          |
 | `ifelse`                | if/else statement                      |
 | `ifnull`                | if statement null check                |
+| `ifnotnull`             | if statement not null check            |
 | `constructor`           | New constructor                        |
 | `newobj`                | New Object                             |
 | `field`                 | New field                              |
@@ -50,3 +51,4 @@ To use the snippets type part of a snippet and press `Tab` or `Enter` or, press 
 | `sysassnull`            | System.assertEquals(null, actual);     |
 | `sysassnotnull`         | System.assertNotEqual(null, actual);   |
 | `mapids`                | Set Ids from map of SObject            |
+| `testmethod`            | Test method                            |
